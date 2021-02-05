@@ -31,7 +31,7 @@ namespace net_core_docker_sample.Controllers
             {
                 Date = DateTime.Now.AddDays(index),
                 //TemperatureC = rng.Next(-20, 55),
-                TemperatureC = rng.Next(90, 100),
+                TemperatureC = 100, //rng.Next(90, 100),
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
